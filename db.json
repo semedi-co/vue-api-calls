@@ -1,0 +1,161 @@
+{
+  "users": [
+    {
+      "createdAt": "2022-11-25T15:03:32.334Z",
+      "name": "sule",
+      "hobi": "hobi 2",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/625.jpg",
+      "id": "2"
+    },
+    {
+      "createdAt": "2022-11-26T03:37:53.676Z",
+      "name": "name 3",
+      "hobi": "hobi 3",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/674.jpg",
+      "id": "3"
+    },
+    {
+      "createdAt": "2022-11-25T22:54:47.193Z",
+      "name": "name 4",
+      "hobi": "hobi 4",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/292.jpg",
+      "id": "4"
+    },
+    {
+      "createdAt": "2022-11-25T14:08:14.800Z",
+      "name": "name 5",
+      "hobi": "hobi 5",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/100.jpg",
+      "id": "5"
+    },
+    {
+      "createdAt": "2022-11-26T04:15:24.313Z",
+      "name": "name 6",
+      "hobi": "hobi 6",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1059.jpg",
+      "id": "6"
+    },
+    {
+      "createdAt": "2022-11-25T16:01:37.581Z",
+      "name": "name 7",
+      "hobi": "hobi 7",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/542.jpg",
+      "id": "7"
+    },
+    {
+      "createdAt": "2022-11-25T23:58:17.113Z",
+      "name": "name 8",
+      "hobi": "hobi 8",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/832.jpg",
+      "id": "8"
+    },
+    {
+      "createdAt": "2022-11-25T18:43:22.125Z",
+      "name": "name 9",
+      "hobi": "hobi 9",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/903.jpg",
+      "id": "9"
+    },
+    {
+      "createdAt": "2022-11-25T22:35:19.292Z",
+      "name": "name 10",
+      "hobi": "hobi 10",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/192.jpg",
+      "id": "10"
+    },
+    {
+      "createdAt": "2022-11-25T11:18:22.919Z",
+      "name": "name 11",
+      "hobi": "hobi 11",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/920.jpg",
+      "id": "11"
+    },
+    {
+      "createdAt": "2022-11-26T05:10:02.030Z",
+      "name": "name 12",
+      "hobi": "hobi 12",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/527.jpg",
+      "id": "12"
+    },
+    {
+      "createdAt": "2022-11-26T01:21:42.451Z",
+      "name": "name 13",
+      "hobi": "hobi 13",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1113.jpg",
+      "id": "13"
+    },
+    {
+      "name": "Halooo",
+      "hobi": "Halooo",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1113.jpg",
+      "id": "KMYh_1q"
+    },
+    {
+      "name": "halooo",
+      "hobi": "haloooo",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/808.jpg",
+      "id": "YBGm0JJ"
+    }
+  ],
+  "buku": [
+    {
+      "id": 1,
+      "judul": "judul 1",
+      "penulis": "penulis 1",
+      "cover": "https://literasinusantara.com/wp-content/uploads/2019/03/Mimpi-TBM-Kolong-2-720x720.jpg",
+      "kategori": [
+        "Novel",
+        "Manga",
+        "Non Fiksi",
+        "Komik"
+      ]
+    },
+    {
+      "judul": "Bojo Loro 3 4 5",
+      "penulis": "Awak",
+      "kategori": [
+        "Ensiklopedia",
+        "Biografi",
+        "Novel",
+        "Non Fiksi"
+      ],
+      "cover": "https://loremflickr.com/200/300/abstract?lock=97814",
+      "id": 2
+    },
+    {
+      "judul": "bojo",
+      "penulis": "bajul",
+      "kategori": [
+        "Fiksi",
+        "Non Fiksi",
+        "Komik",
+        "Novel"
+      ],
+      "cover": "https://loremflickr.com/200/300/abstract",
+      "id": 3
+    },
+    {
+      "judul": "owkoko",
+      "penulis": "okwokowk",
+      "kategori": [
+        "Fiksi",
+        "Non Fiksi",
+        "Komik",
+        "Novel",
+        "Biografi"
+      ],
+      "cover": "https://loremflickr.com/200/300/abstract?lock=24493",
+      "id": 4
+    },
+    {
+      "judul": "Blalala",
+      "penulis": "lkjlkjlkjlkj",
+      "kategori": [
+        "Fiksi",
+        "Non Fiksi",
+        "Komik"
+      ],
+      "id": 5
+    }
+  ]
+}
