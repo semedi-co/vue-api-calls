@@ -99,63 +99,14 @@
   ],
   "buku": [
     {
-      "id": 1,
-      "judul": "judul 1",
-      "penulis": "penulis 1",
-      "cover": "https://literasinusantara.com/wp-content/uploads/2019/03/Mimpi-TBM-Kolong-2-720x720.jpg",
+      "judul": "adsfjskdjf",
+      "penulis": "kjdslkfjsdf",
       "kategori": [
-        "Novel",
-        "Manga",
-        "Non Fiksi",
-        "Komik"
-      ]
-    },
-    {
-      "judul": "Bojo Loro 3 4 5",
-      "penulis": "Awak",
-      "kategori": [
-        "Ensiklopedia",
-        "Biografi",
-        "Novel",
+        "Fiksi",
         "Non Fiksi"
       ],
-      "cover": "https://loremflickr.com/200/300/abstract?lock=97814",
-      "id": 2
-    },
-    {
-      "judul": "bojo",
-      "penulis": "bajul",
-      "kategori": [
-        "Fiksi",
-        "Non Fiksi",
-        "Komik",
-        "Novel"
-      ],
-      "cover": "https://loremflickr.com/200/300/abstract",
-      "id": 3
-    },
-    {
-      "judul": "owkoko",
-      "penulis": "okwokowk",
-      "kategori": [
-        "Fiksi",
-        "Non Fiksi",
-        "Komik",
-        "Novel",
-        "Biografi"
-      ],
-      "cover": "https://loremflickr.com/200/300/abstract?lock=24493",
-      "id": 4
-    },
-    {
-      "judul": "Blalala",
-      "penulis": "lkjlkjlkjlkj",
-      "kategori": [
-        "Fiksi",
-        "Non Fiksi",
-        "Komik"
-      ],
-      "id": 5
+      "cover": "https://loremflickr.com/200/300/abstract?lock=34065",
+      "id": 1
     }
   ]
 }

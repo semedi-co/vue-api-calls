@@ -21,14 +21,14 @@ const router = createRouter({
       component: () => import("../views/TokoBuku.vue"),
     },
     {
-      path: "/add-buku",
-      name: "Tambah Buku",
-      component: () => import("../views/TambahBuku.vue"),
-    },
-    {
       path: "/buku/:id",
       name: "about",
       component: () => import("../views/DetailBuku.vue"),
+    },
+    {
+      path: "/add-buku",
+      name: "Tambah Buku",
+      component: () => import("../views/TambahBuku.vue"),
     },
   ],
 });

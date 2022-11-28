@@ -2,6 +2,7 @@
 import axios from "axios";
 import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
+import Swal from "sweetalert2";
 
 const router = useRouter();
 
@@ -16,6 +17,43 @@ const getBuku = async () => {
     .catch((error) => {
       console.log(error);
     });
+};
+
+const deleteBuku = async (id) => {
+  Swal.fire({
+    title: "Apakah anda yakin?",
+    text: "Data yang di hapus",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#d33",
+    cancelButtonColor: "#3085d6",
+    confirmButtonText: "Yes, delete it!",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      axios
+        .delete("http://localhost:3000/buku/" + id)
+        .then((res) => {
+          Swal.fire({
+            title: res.status,
+            text: "Data berhasil di hapus",
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              getBuku();
+            }
+          });
+        })
+        .catch(() => {
+          Swal.fire({
+            title: "Gagal",
+            text: "Data gagal di hapus",
+            icon: "error",
+            confirmButtonText: "OK",
+          });
+        });
+    }
+  });
 };
 
 onMounted(() => {
@@ -79,7 +117,12 @@ onMounted(() => {
               >
                 Detail
               </button>
-              <button class="btn btn-danger btn-sm">Delete</button>
+              <button
+                class="btn btn-danger btn-sm"
+                @click="deleteBuku(item.id)"
+              >
+                Delete
+              </button>
             </div>
           </td>
         </tr>

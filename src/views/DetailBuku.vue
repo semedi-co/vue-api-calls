@@ -2,6 +2,7 @@
 import { onMounted, reactive, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 const dataDetail = reactive({
   form: {},
@@ -17,9 +18,9 @@ const kategori = ref([
 ]);
 
 const router = useRouter();
-// Pertama kita perlu mendapatkan params (2) dari url browser kita ex: http://localhost:5173/buku/1
+// Pertama kita perlu mendapatkan params (id) dari url browser kita ex: http://localhost:5173/buku/1
 // dan kita tampung di variable idBuku
-const idBuku = useRoute().params.id;
+const idBuku = useRoute().params.id; // 2
 
 // Setelah Dapatkan id buku => kita pakai untuk get Detail Buku dengan url /data/{masukkan dgn idBuku}
 const getDetailBuku = async () => {
@@ -54,12 +55,28 @@ const editBuku = async () => {
   axios
     .put("http://localhost:3000/buku/" + idBuku, dataEdit)
     .then((res) => {
-      alert(`Berhasil Mengubah buku ${res.data.judul}`);
-      // Setelah berhasil edit kita redirect/pergi ke list buku
-      router.push("/buku");
+      // console log status code
+      console.log(res.status);
+      // Swal confirm
+      Swal.fire({
+        title: res.status,
+        text: "Data berhasil di edit",
+        icon: "success",
+        confirmButtonText: "OK",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // redirect ke halaman toko buku
+          router.push("/buku");
+        }
+      });
     })
-    .catch((err) => {
-      alert(err);
+    .catch(() => {
+      Swal.fire({
+        title: "Gagal",
+        text: "Data gagal di edit",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
     });
 };
 
