@@ -1,11 +1,18 @@
 <script setup>
 import { RouterLink } from "vue-router";
+defineProps({
+  navbarBrand: {
+    type: String,
+    default: "API CALLS",
+    required: true,
+  },
+});
 </script>
 
 <template>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <RouterLink to="/" class="navbar-brand">🔥 API CALLS</RouterLink>
+      <RouterLink to="/" class="navbar-brand">{{ navbarBrand }}</RouterLink>
       <button
         class="navbar-toggler"
         type="button"

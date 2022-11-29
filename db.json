@@ -99,14 +99,65 @@
   ],
   "buku": [
     {
-      "judul": "adsfjskdjf",
-      "penulis": "kjdslkfjsdf",
+      "judul": "Bojo 2",
+      "penulis": "Awal",
+      "kategori": [
+        "Non Fiksi",
+        "Fiksi"
+      ],
+      "cover": "https://loremflickr.com/200/300/abstract?lock=76148",
+      "id": 1
+    },
+    {
+      "judul": "sdkfjskfdj",
+      "penulis": "kjdskfj",
       "kategori": [
         "Fiksi",
         "Non Fiksi"
       ],
-      "cover": "https://loremflickr.com/200/300/abstract?lock=34065",
-      "id": 1
+      "cover": "https://loremflickr.com/200/300/abstract?lock=47951",
+      "id": 2
+    },
+    {
+      "judul": "asdasdasda",
+      "penulis": "dsadasdsad",
+      "kategori": [
+        "Fiksi",
+        "Non Fiksi"
+      ],
+      "cover": "https://loremflickr.com/200/300/abstract?lock=74837",
+      "id": 3
+    },
+    {
+      "judul": "halo",
+      "penulis": "halo",
+      "kategori": [
+        "Fiksi",
+        "Non Fiksi"
+      ],
+      "cover": "https://loremflickr.com/200/300/abstract?lock=49195",
+      "id": 4
+    },
+    {
+      "judul": "dfkjskdfj",
+      "penulis": "kjdslkfjlksdfj",
+      "kategori": [
+        "Fiksi",
+        "Non Fiksi",
+        "Komik"
+      ],
+      "cover": "https://loremflickr.com/200/300/abstract?lock=15770",
+      "id": 5
+    },
+    {
+      "judul": "askdjskdj",
+      "penulis": "kjskdjskdsd",
+      "kategori": [
+        "Fiksi",
+        "Non Fiksi"
+      ],
+      "cover": "https://loremflickr.com/200/300/abstract?lock=97415",
+      "id": 6
     }
   ]
 }

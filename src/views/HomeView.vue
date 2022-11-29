@@ -1,3 +1,11 @@
+<script setup>
+import MyButton from "../components/Button.vue";
+
+function halo() {
+  alert("halo");
+}
+</script>
+
 <template>
   <div class="p-5 mb-4 bg-light rounded-3">
     <div class="container-fluid py-5">
@@ -6,9 +14,12 @@
         There are several options available to make API calls from your Vue.js
         applications.
       </p>
-      <button class="btn btn-primary btn-lg" type="button">
-        Example button
-      </button>
+      <form @submit="halo">
+        <MyButton label="Lets Go" variant="primary" type="submit" />
+      </form>
+      <MyButton label="Lets Go" variant="danger" />
+      <MyButton label="Lets Go" variant="info" />
+      <MyButton label="Lets Go" />
     </div>
   </div>
 </template>

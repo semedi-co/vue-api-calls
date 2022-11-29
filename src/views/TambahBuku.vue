@@ -1,8 +1,11 @@
 <script setup>
 import { reactive, ref } from "vue";
+import { Form, Field, ErrorMessage } from "vee-validate";
 import axios from "axios";
 import { useRouter } from "vue-router";
 import { faker } from "@faker-js/faker";
+import * as Yup from "yup";
+import MyInput from "../components/Input.vue";
 
 const kategori = ref([
   "Fiksi",
@@ -22,11 +25,11 @@ const form = reactive({
 
 const router = useRouter();
 
-const tambahBuku = async () => {
+const addBuku = (values) => {
   const data = {
-    judul: form.judul,
-    penulis: form.penulis,
-    kategori: form.kategori,
+    judul: values.judul,
+    penulis: values.penulis,
+    kategori: values.kategori,
     cover: faker.image.abstract(200, 300, true),
   };
   axios
@@ -39,51 +42,43 @@ const tambahBuku = async () => {
       alert(err);
     });
 };
+
+const schema = Yup.object().shape({
+  judul: Yup.string().required("Judul harus diisi"),
+  penulis: Yup.string().required("Penulis harus diisi"),
+  kategori: Yup.array()
+    .min(2, "Min 2 Kategori")
+    .required("Kategori harus diisi"),
+});
 </script>
 
 <template>
   <div class="container mt-5">
     <h1 class="mb-4">Tambah Buku</h1>
-    <form @submit.prevent="tambahBuku">
-      <div class="mb-3">
-        <label for="judul" class="form-label">Judul</label>
-        <input
-          type="text"
-          class="form-control"
-          id="judul"
-          placeholder="Masukkan Judul Buku"
-          v-model="form.judul"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="Penulis" class="form-label">Penulis</label>
-        <input
-          type="text"
-          class="form-control"
-          id="Penulis"
-          placeholder="Masukkan Penulis Buku"
-          v-model="form.penulis"
-        />
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Kategori</label>
-        <br />
-        <div
-          class="form-check form-check-inline"
-          v-for="(item, index) in kategori"
-          :key="index"
-        >
-          <input
-            class="form-check-input"
-            type="checkbox"
-            v-model="form.kategori"
-            :id="item"
-            :value="item"
-          />
-          <label class="form-check-label" :for="item">{{ item }}</label>
-        </div>
-      </div>
+    <Form @submit="addBuku" :validation-schema="schema" v-slot="{ errors }">
+      <MyInput
+        title="Judul"
+        name="judul"
+        type="text"
+        :errors="errors.judul"
+        placeholder="Masukkan Judul"
+      />
+      <MyInput
+        title="Penulis"
+        name="penulis"
+        type="text"
+        :errors="errors.penulis"
+        placeholder="Masukkan penulis"
+      />
+      <MyInput
+        title="Kategori"
+        name="kategori"
+        type="checkbox"
+        :errors="errors.kategori"
+        placeholder="Masukkan kategori"
+        :data="kategori"
+      />
       <button type="submit" class="btn btn-primary">Simpan</button>
-    </form>
+    </Form>
   </div>
 </template>

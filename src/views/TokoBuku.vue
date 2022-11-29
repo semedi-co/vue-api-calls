@@ -20,7 +20,7 @@ const getBuku = async () => {
 };
 
 const deleteBuku = async (id) => {
-  Swal.fire({
+  await Swal.fire({
     title: "Apakah anda yakin?",
     text: "Data yang di hapus",
     icon: "warning",
@@ -93,6 +93,7 @@ onMounted(() => {
               alt="cover"
               width="100"
               class="img-thumbnail"
+              loading="lazy"
             />
           </td>
           <td>{{ item.judul }}</td>
